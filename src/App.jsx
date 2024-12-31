@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
 import { ErrorPage, HomePage, ItemPage, ShopPage, ShippingPage } from "./pages";
 import { Footer } from "./components/Footer/Footer";
@@ -11,7 +11,7 @@ function App() {
     <div className="font-poppins flex flex-col min-h-screen">
       <CartProvider>
         <ProductsProvider>
-          <HashRouter>
+          <BrowserRouter>
             <Toaster position="bottom-right" richColors />
             <Navbar />
             <main className="flex-grow">
@@ -31,7 +31,7 @@ function App() {
               </Routes>
             </main>
             <Footer />
-          </HashRouter>
+          </BrowserRouter>
         </ProductsProvider>
       </CartProvider>
     </div>
