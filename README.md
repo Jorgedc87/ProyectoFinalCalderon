@@ -2,9 +2,11 @@
 
 ## Descripción
 
-Este proyecto es la segunda preentrega del curso de React de **Coderhouse**: "Navega las rutas". 
+Este proyecto es la entrega final del curso de React de **Coderhouse**. 
 
 El diseño es completamente responsivo gracias al uso de **TailwindCSS**.
+
+Es un e-commerce completo de una PetShop, conectada a una base de datos Firebase. La misma maneja una colección de productos, con su respectivo stock, y órdenes de compra. También guarda emails para suscripciones.
 
 ## Tecnologías
 
@@ -33,7 +35,7 @@ Sigue los siguientes pasos para instalar y ejecutar el proyecto:
 
 ## Funcionalidades destacadas
 
-- **Filtros dinámicos:** La sección de productos permite filtrar por categoría (Perros o Gatos) y peso en tiempo real.
+- **Filtros dinámicos:** La sección de productos permite filtrar por categoría (Perros, Gatos y Peces).
 - **Página de detalles de producto (Item):** Visualiza información detallada de un producto, incluyendo su imagen, descripción, precio actualizado, y un selector de cantidad con diseño responsivo.
 - **Footer completo:** Contiene:
   - Logo principal de la tienda.
@@ -41,9 +43,17 @@ Sigue los siguientes pasos para instalar y ejecutar el proyecto:
   - Logotipos de medios de pago (Mercado Pago, MODO, entre otros) con diseño adaptativo.
 - **Página de Error 404:** Una vista estilizada y amigable que informa cuando el usuario accede a una ruta no válida, con un botón para regresar al inicio.
 - **Página de envíos:** Información ficticia detallada sobre los métodos de envío, tiempos estimados y costos.
+- **CardWidget:** Manejo perfecto del carrito donde podrán agregarse productos en tiempo real, eliminarlos o vaciarlos. Al comprar, te devuelve un código de compra.
+- **Suscripciones:** Permite guardar suscripciones (emails).
+- **Notificaciones Toast:** Uso de Sonner para las diferentes notificaciones en el sitio.
+- **Uso de Contextos:** Manejo de dos contextos para evitar la propagación de props entre componentes innecesariamente.
 - **Diseño responsivo:** Cada vista y componente están optimizados para dispositivos móviles, tabletas y escritorios, gracias al uso de TailwindCSS.
 
+## Despliegue en Vercel
+
+**Sitio:** https://eren-petshop.vercel.app/
+
 ## Licencia y versión
-- **Versión:** 1.1
+- **Versión:** 1.2
 - **Licencia:** Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más información.
 - **Autor:** Jorge Calderón
